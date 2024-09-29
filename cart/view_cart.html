@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+    <title>View Cart</title>
+    <link rel="stylesheet" href="../order page/view_cart.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-container">
+        <img src="../assets/images2/choclate cake.jpg" alt="Background Image 1">
+        <img src="../assets/images/hero-slider-2.jpg" alt="Background Image 2">
+        <img src="../assets/images/hero-slider-3.jpg" alt="Background Image 3">
+    </div>
+
+
+
+
+
+
+    <header class="heading">
+        <h1 class="heading-name" style="color: black;">View Cart</h1>
+    </header>
+    <main>
+        <section class="cart-items">
+            <!-- Cart items will be dynamically added here -->
+        </section>
+        <section class="total">
+            <h2>Subtotal: <span id="subtotal">0.00 Rs</span></h2>
+            <h2>GST: <span id="tax">0.00 Rs</span></h2>
+            <h2>Discount: <span id="discount">0.00 Rs</span></h2>
+            <h2>Delivery Charges: <span id="deliveryCharges">0.00 Rs</span></h2>
+            <h2>Total: <span id="totalAmount">0.00 Rs</span></h2>
+            <button class="button-89" role="button">Checkout</button>
+        </section>
+        <section class="payment-methods">
+            <div id="qrCodeModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h3>Scan the QR Code to Pay</h3>
+                    <img id="qrCodeImage" src="../assets/images2/qr_code.jpg" alt="QR Code" style="max-width: 300px;">
+                </div>
+            </div>
+            
+
+            <h2>Payment Methods</h2>
+            <div class="payment-method-images">
+                <label>
+                    <input type="radio" name="paymentMethod" value="cashOnDelivery">
+                    <img src="../assets/images2/cod.png" alt="">
+                    
+                </label>
+                <label>
+                    <input type="radio" name="paymentMethod" value="googlePay"> 
+                    <img src="../assets/images2/google pay 2.avif.jpg" alt="" style="border-radius: 90px;">                
+                </label>
+                <!-- Add more payment methods as needed -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p class="heading" style="color: black;">&copy; 2024 Your Company</p>
+    </footer>
+    <script src="../order page/view_cart.js"></script>
+</body>
+</html>
